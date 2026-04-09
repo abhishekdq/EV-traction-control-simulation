@@ -37,32 +37,23 @@ This project demonstrates core concepts from control systems, vehicle dynamics, 
 ## System Description
 The EV traction model is based on longitudinal vehicle dynamics. The motor generates driving force, while aerodynamic drag and road slope act as opposing disturbances.
 
-The controller computes control input from the difference between desired speed and actual speed:
+The controller computes the control input from the difference between desired speed and actual speed:
 
-\[
-u = K_p (v_{ref} - v)
-\]
+u = Kp * (v_ref - v)
 
 Motor torque and traction force are then generated as:
 
-\[
-T = K_t u
-\]
-
-\[
-F_{motor} = \frac{T}{r}
-\]
+T = Kt * u  
+F_motor = T / r  
 
 The net vehicle acceleration is governed by:
 
-\[
-m \frac{dv}{dt} = F_{motor} - F_{drag} - F_{slope}
-\]
+m * dv/dt = F_motor - F_drag - F_slope  
 
 where:
 
-- \(F_{drag} = kv^2\)
-- \(F_{slope} = mg\sin\theta\)
+F_drag = k * v^2  
+F_slope = m * g * sin(theta)
 
 ---
 
