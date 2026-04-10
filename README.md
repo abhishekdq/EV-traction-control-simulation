@@ -129,4 +129,3 @@ This project can be extended further by adding:
 
 ## Author
 Abhishek Deshmukh  
-Electrical Engineering Undergraduate
