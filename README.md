@@ -60,7 +60,7 @@ F_slope = m * g * sin(theta)
 ## Simulink Model
 The block diagram below represents the EV traction control system implemented in Simulink.
 
-![Simulink Model](simulink_model.png)
+![Simulink Model](Figures/simulink_model.png)
 
 The model includes:
 - reference speed input
@@ -90,17 +90,17 @@ This setup allows the controller response to be evaluated under changing operati
 ## Results
 
 ### Speed Response
-![Speed Response](speed_response.png)
+![Speed Response](Figures/speed_response.png)
 
 The vehicle speed rises smoothly from rest and approaches the reference speed with stable behavior. When the road becomes uphill, the speed drops slightly due to increased load. During the downhill interval, the vehicle recovers and returns close to the reference speed.
 
 ### Control Effort
-![Control Effort](control_effort.png)
+![Control Effort](Figures/control_effort.png)
 
 The control effort is highest at startup because the controller must accelerate the vehicle from rest. As the speed approaches the setpoint, the required control input decreases significantly. Disturbances introduced by slope changes cause the controller to adjust its effort accordingly.
 
 ### Combined Response
-![Combined Response](speed_control_response.png)
+![Combined Response](Figures/speed_control_response.png)
 
 The combined response gives a clear view of the relationship between vehicle speed and control input throughout the simulation.
 
