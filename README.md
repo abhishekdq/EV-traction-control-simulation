@@ -26,12 +26,9 @@ This project demonstrates core concepts from control systems, vehicle dynamics, 
 
 ## Project Files
 - `README.md`
-- `control_effort.png` | control effort plot
-- `ev_traction_simulation.m` | MATLAB script for numerical simulation
-- `ev_traction_simulink_model.slx` | Simulink model of the EV traction system
-- `simulink_model.png` | Simulink block diagram
-- `speed_control_response.png` | combined response plot
-- `speed_response.png` | speed response plot
+- `Figures/` | control effort, combined response, and speed response plot with Simulink block diagram
+- `Script/` | MATLAB script for numerical simulation
+- `Model/` | Simulink model of the EV traction system
 ---
 
 ## System Description
